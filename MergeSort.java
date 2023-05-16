@@ -12,6 +12,7 @@ public class MergeSort {
         for(int i=0;i<arr.length;i++)
             System.out.print(arr[i] + " ");
     }
+    //This function divides an array into different arrays until each array consist of single element
     private static void merge(int[] arr) {
         int length = arr.length;
         if(length <= 1)
@@ -38,6 +39,7 @@ public class MergeSort {
         arrange(arr,leftArray,rightArray);
     }
 
+    // This function performs the merging operation by merging two arrays in ascending order
     private static void arrange(int[] array, int[] leftArray, int[] rightArray) {
         int left = array.length / 2;
         int right = array.length - left;
