@@ -6,10 +6,11 @@ public class BinarySearch {
         for(int i=0;i<arr.length;i++)
             arr[i] = sc.nextInt();
         Arrays.sort(arr);
+        //this function sorts the array in ascending order
         for(int i : arr)
             System.out.print(i + " ");
         System.out.println();
-        int index = binary(arr,34);
+        int index = binary(arr,35);
         if(index == -1)
             System.out.println("Element is not found");
         else
